@@ -1,0 +1,385 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>MINÉ — Минималистичная одежда и аксессуары</title>
+
+    <meta
+        name="description"
+        content="MINÉ — демонстрационный интернет-магазин минималистичной одежды и аксессуаров. Простота, комфорт и внимание к деталям."
+    >
+
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="MINÉ">
+
+    <!-- Цвет браузера -->
+    <meta name="theme-color" content="#FAF7F2">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MINÉ — Минималистичная одежда">
+    <meta
+        property="og:description"
+        content="Одежда, в которой комфортно быть собой. Минимализм и внимание к деталям."
+    >
+    <meta property="og:locale" content="ru_RU">
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<!-- ШАПКА -->
+<header class="header">
+    <a href="#" class="logo">MINÉ</a>
+
+    <nav class="navigation">
+        <a href="#home">Главная</a>
+        <a href="#catalog">Каталог</a>
+        <a href="#about">О нас</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
+
+    <div class="header-actions">
+        <button class="favorite-header-button" id="open-favorites">
+            ♡ <span id="favorite-count">0</span>
+        </button>
+
+        <button class="cart-button" id="open-cart">
+            Корзина <span id="cart-count">0</span>
+        </button>
+    </div>
+</header>
+
+
+    <!-- ГЛАВНЫЙ ЭКРАН -->
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="eyebrow">НОВАЯ КОЛЛЕКЦИЯ</span>
+
+                <h1>Простота —<br>это искусство.</h1>
+
+                <p>
+                    Одежда, в которой комфортно быть собой.
+                    Минимализм, качество и внимание к деталям.
+                </p>
+
+                <a href="#catalog" class="primary-button">
+                    Смотреть коллекцию
+                </a>
+            </div>
+
+            <div class="hero-image">
+                
+<img
+    src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1000&q=80"
+    alt="Женская коллекция одежды"
+    decoding="async"
+    fetchpriority="high"
+>
+
+        </section>
+
+        <!-- КАТАЛОГ -->
+
+<section class="catalog" id="catalog">
+    <div class="section-heading">
+        <div>
+            <span class="eyebrow">НАША ПОДБОРКА</span>
+            <h2>Избранное</h2>
+        </div>
+
+        <p>Вещи, которые хочется носить каждый день.</p>
+    </div>
+
+    <div class="catalog-filters">
+        <button class="filter-btn active" data-filter="all">Все товары</button>
+        <button class="filter-btn" data-filter="clothing">Одежда</button>
+        <button class="filter-btn" data-filter="shoes">Обувь</button>
+        <button class="filter-btn" data-filter="accessories">Аксессуары</button>
+    </div>
+
+<div class="catalog-search">
+    <input
+        type="search"
+        id="product-search"
+        placeholder="Найти товар..."
+        aria-label="Поиск товаров"
+    >
+    <p id="search-empty" hidden>
+        По вашему запросу ничего не найдено.
+    </p>
+</div>
+
+<div class="catalog-sort">
+    <label for="product-sort">Сортировать:</label>
+
+    <select id="product-sort">
+        <option value="default">По умолчанию</option>
+        <option value="cheap">Сначала дешевле</option>
+        <option value="expensive">Сначала дороже</option>
+        <option value="name">По названию А–Я</option>
+    </select>
+</div>
+
+    
+<div class="products">
+
+ 
+
+<!-- БЕЖЕВЫЙ ЖАКЕТ -->
+<article class="product-card" data-category="clothing">
+
+    <div class="product-image">
+        <a href="product.html?id=jacket" class="product-image-link">
+            
+<img
+    src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=700&q=80"
+    alt="Бежевый жакет"
+    loading="lazy"
+    decoding="async"
+>
+</a>
+
+
+        <button class="favorite-btn" type="button"
+            data-name="Бежевый жакет"
+            aria-label="Добавить в избранное">
+            ♡
+        </button>
+    </div>
+
+    <div class="product-info">
+        <h3>Бежевый жакет</h3>
+        <span>2 490 ₴</span>
+    </div>
+
+    <div class="product-size">
+        <label>Размер:</label>
+        <select class="size-select">
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M" selected>M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+    </div>
+
+    <button class="add-to-cart"
+        data-name="Бежевый жакет"
+        data-price="2490">
+        В корзину
+    </button>
+
+</article>
+
+
+<!-- БАЗОВАЯ РУБАШКА -->
+<article class="product-card" data-category="clothing">
+
+    <div class="product-image">
+        <a href="product.html?id=shirt" class="product-image-link">
+            
+<img
+    src="https://images.unsplash.com/photo-1551163943-3f6a855d1153?auto=format&fit=crop&w=700&q=80"
+    alt="Базовая рубашка"
+    loading="lazy"
+    decoding="async"
+>
+</a>
+
+
+        <button class="favorite-btn" type="button"
+            data-name="Базовая рубашка"
+            aria-label="Добавить в избранное">
+            ♡
+        </button>
+    </div>
+
+    <div class="product-info">
+        <h3>Базовая рубашка</h3>
+        <span>1 590 ₴</span>
+    </div>
+
+    <div class="product-size">
+        <label>Размер:</label>
+        <select class="size-select">
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M" selected>M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+    </div>
+
+    <button class="add-to-cart"
+        data-name="Базовая рубашка"
+        data-price="1590">
+        В корзину
+    </button>
+
+</article>
+
+
+<!-- МИНИМАЛИСТИЧНАЯ СУМКА -->
+<article class="product-card" data-category="accessories">
+
+    <div class="product-image">
+        <a href="product.html?id=bag" class="product-image-link">
+            
+<img
+    src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=80"
+    alt="Минималистичная сумка"
+    loading="lazy"
+    decoding="async"
+>
+</a>
+
+
+        <button class="favorite-btn" type="button"
+            data-name="Минималистичная сумка"
+            aria-label="Добавить в избранное">
+            ♡
+        </button>
+    </div>
+
+    <div class="product-info">
+        <h3>Минималистичная сумка</h3>
+        <span>1 890 ₴</span>
+    </div>
+
+    <!-- Пустое место вместо выбора размера -->
+    <div class="product-size"></div>
+
+    <button class="add-to-cart"
+        data-name="Минималистичная сумка"
+        data-price="1890">
+        В корзину
+    </button>
+
+</article>
+
+
+</div>
+
+</section>
+        <!-- О МАГАЗИНЕ -->
+        <section class="about" id="about">
+            <span class="eyebrow">НАША ФИЛОСОФИЯ</span>
+            <h2>Меньше лишнего.<br>Больше настоящего.</h2>
+            <p>
+                MINÉ — это любовь к простым формам,
+                приятным материалам и вещам,
+                которые остаются актуальными.
+            </p>
+        </section>
+    </main>
+
+    <!-- ПОДВАЛ -->
+    <footer class="footer" id="contacts">
+        <a href="#" class="logo">MINÉ</a>
+        <p>Одежда для твоего повседневного стиля.</p>
+        <span>© 2026 MINÉ. Демонстрационный проект.</span>
+    </footer>
+
+    
+<!-- КОРЗИНА -->
+<div class="cart-overlay" id="cart-overlay">
+    <div class="cart-panel">
+
+        <div class="cart-heading">
+            <h2>Корзина</h2>
+            <button id="close-cart" class="close-cart">✕</button>
+        </div>
+
+        <!-- ТОВАРЫ -->
+        <div id="cart-items"></div>
+
+        <!-- ИТОГО -->
+        <div class="cart-total">
+            <span>Итого:</span>
+            <strong id="cart-total">0 ₴</strong>
+        </div>
+
+        <!-- КНОПКА ОФОРМЛЕНИЯ -->
+        <button type="button" class="checkout-open-btn" id="checkout-open">
+            Оформить заказ
+        </button>
+
+        <!-- ФОРМА ЗАКАЗА -->
+        <div class="checkout-form-wrapper" id="checkout-form-wrapper">
+
+            <div class="checkout-heading">
+                <h3>Оформление заказа</h3>
+                <p>Заполните данные для доставки</p>
+            </div>
+
+            <form id="checkout-form">
+
+                <label for="customer-name">Ваше имя</label>
+                <input type="text" id="customer-name"
+                    placeholder="Введите имя" required>
+
+                <label for="customer-phone">Номер телефона</label>
+                <input type="tel" id="customer-phone"
+                    placeholder="+380..." required>
+
+                <label for="delivery-method">Способ доставки</label>
+                <select id="delivery-method" required>
+                    <option value="">Выберите доставку</option>
+                    <option value="Новая почта — отделение">Новая почта — отделение</option>
+                    <option value="Новая почта — почтомат">Новая почта — почтомат</option>
+                    <option value="Курьерская доставка">Курьерская доставка</option>
+                </select>
+
+                <label for="delivery-address">Адрес или номер отделения</label>
+                <input type="text" id="delivery-address"
+                    placeholder="Город, улица или отделение" required>
+
+                <button type="submit" class="checkout-submit-btn">
+                    Подтвердить заказ
+                </button>
+
+            </form>
+
+            <div id="checkout-success" class="checkout-success">
+                <h3>Спасибо за заказ!</h3>
+                <p>Ваш заказ успешно оформлен.</p>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- ИЗБРАННОЕ -->
+<div class="favorites-overlay" id="favorites-overlay">
+    <div class="favorites-panel">
+        <div class="favorites-heading">
+            <div>
+                <h2>Избранное</h2>
+                <p>Ваши любимые вещи</p>
+            </div>
+
+            <button id="close-favorites" class="close-favorites">✕</button>
+        </div>
+
+        <div id="favorites-items"></div>
+    </div>
+</div>
+
+<div id="mine-notification" class="mine-notification">
+    <span id="mine-notification-text"></span>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

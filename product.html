@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Каталог товаров — MINÉ</title>
+
+    <meta
+        name="description"
+        content="Познакомьтесь с коллекцией MINÉ: минималистичная одежда и аксессуары на каждый день."
+    >
+
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="MINÉ">
+
+    <!-- Цвет браузера -->
+    <meta name="theme-color" content="#FAF7F2">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="product">
+    <meta property="og:title" content="Коллекция MINÉ">
+    <meta
+        property="og:description"
+        content="Минимализм, комфорт и внимание к деталям."
+    >
+    <meta property="og:locale" content="ru_RU">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ШАПКА -->
+
+    <header class="header">
+        <a href="index.html" class="logo">MINÉ</a>
+
+        <nav class="navigation">
+            <a href="index.html#home">Главная</a>
+            <a href="index.html#catalog">Каталог</a>
+            <a href="index.html#about">О нас</a>
+            <a href="index.html#contacts">Контакты</a>
+        </nav>
+
+        <div class="product-header-actions">
+            <button class="cart-button" id="open-favorites">
+                ♡ <span id="favorite-count">0</span>
+            </button>
+
+            <button class="cart-button" id="open-cart">
+                Корзина (<span id="cart-count">0</span>)
+            </button>
+        </div>
+    </header>
+
+
+    <!-- СТРАНИЦА ТОВАРА -->
+
+    <main class="product-page">
+        <a href="index.html#catalog" class="back-to-catalog">
+            ← Вернуться в каталог
+        </a>
+
+        <section class="product-detail" id="product-detail">
+            <!-- Информация о товаре появится через JavaScript -->
+        </section>
+    </main>
+
+
+    <!-- КОРЗИНА -->
+
+    <div class="cart-overlay" id="cart-overlay">
+        <div class="cart-panel">
+
+            <div class="cart-heading">
+                <h2>Ваша корзина</h2>
+                <button class="close-cart" id="close-cart">×</button>
+            </div>
+
+            <div id="cart-items"></div>
+
+            <div class="cart-total">
+                <span>Итого:</span>
+                <strong><span id="cart-total">0</span> ₴</strong>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ИЗБРАННОЕ -->
+
+    <div class="favorites-overlay" id="favorites-overlay">
+        <div class="favorites-panel">
+
+            <div class="favorites-heading">
+                <h2>Избранное</h2>
+                <button class="close-favorites" id="close-favorites">×</button>
+            </div>
+
+            <div id="favorites-items"></div>
+
+        </div>
+    </div>
+
+
+    <script src="product.js"></script>
+</body>
+</html>
